@@ -45,12 +45,12 @@
 <body>
     <div class="warp">
         <div class="jumbotron">
-        <h1 onclick="openclose()" class="">나홀로 링크 메모장!</h1>
+        <h1  class="">나홀로 링크 메모장!</h1>
         <p class="lead ">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
         <hr class="my-4">
     
         <p class="lead">
-            <a  class=" btn btn-primary btn-lg tolle" href="#" role="button">포스팅박스닫기</a>
+            <a onclick="openclose()" class=" btn btn-primary btn-lg tolle" href="#" role="button">포스팅박스닫기</a>
         </p>
         </div>
         <div class="box" id="post_box">
@@ -122,43 +122,66 @@
 
 </body>
 <script>
-    let count = 1;
 
-    window.onload = function(){ 
-        function clic() {
-    let click = document.querySelectorAll(".click");
-        for(let i = 0; i < click.length; i++){
-            click[i].addEventListener("click", () => {
-                alert("asdasd");
-            }
-            )}
-        console.log(click.length)
-    }
-    clic()
+//카운터 증가 홀수 짝수 출력
+//     let count = 1;
+
+//     window.onload = function(){ 
+//         function clic() {
+//     let click = document.querySelectorAll(".click");
+//         for(let i = 0; i < click.length; i++){
+//             click[i].addEventListener("click", () => {
+//                 alert("asdasd");
+//             }
+//             )}
+       
+//     }
+//     clic()
     
     
-};
+// };
 
 
-$("#post_box").css("display",'none');
+//포스트 박스 숨기고 택스트 바꾸기
+
+// function openclose() {
+//     let status = $("#post_box").css('display');
+//     let statu = $("#post_box");
+
+
+//     if( status == 'block' ){
+//         statu.hide();
+//         $(".tolle").text("포스트박스열기")
+//     }
+//     else{
+//         statu.show();
+//         $(".tolle").text("포스트박스닫기")
+//     }
+    
+// }
+
+//토글버튼 
+// function openclose(){
+//     $("#post_box").toggle();
+// }
 
 function openclose() {
-    let status = $("#post_box").css('display');
-    let statu = $("#post_box");
-
-
-    if( status == 'block' ){
-        statu.hide();
-        $(".tolle").text("포스트박스열기")
-    }
+    const post_box = document.querySelector("#post_box")
+   if(post_box.style.display == 'block'){
+    post_box.style.display = "none";
+   }
     else{
-        statu.show();
-        $(".tolle").text("포스트박스닫기")
+        post_box.style.display = "block"
     }
-    
 }
 
 
+
+
+
+
+
+//택스트 박스 제이쿼리 히든 쇼 함수로 토글
 
 // function openclose() {
     
@@ -173,10 +196,10 @@ function openclose() {
 
     
 
-
+//버튼에 이벤트리스너로 제이쿼리 함수 실행
     
-    let tolle = document.querySelector(".tolle");
-    tolle.addEventListener("click",openclose)
+    // let tolle = document.querySelector(".tolle");
+    // tolle.addEventListener("click",openclose)
 
     
 
