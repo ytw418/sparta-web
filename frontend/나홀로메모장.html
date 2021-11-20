@@ -19,23 +19,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-  
+
 
     <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
 
     <style>
-        .warp{
+        .warp {
             width: 900px;
             margin: auto
         }
-        .box{width: 500px;
+
+        .box {
+            width: 500px;
             margin: auto;
             border: 3px solid rgb(93, 91, 255);
             border-radius: 15px;
             padding: 30px;
             margin-bottom: 30px;
         }
-
     </style>
 
 
@@ -45,76 +46,89 @@
 <body>
     <div class="warp">
         <div class="jumbotron">
-        <h1  class="">나홀로 링크 메모장!</h1>
-        <p class="lead ">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
-        <hr class="my-4">
-    
-        <p class="lead">
-            <a onclick="openclose()" class=" btn btn-primary btn-lg tolle" href="#" role="button">포스팅박스닫기</a>
-        </p>
+            <h1 class="">나홀로 링크 메모장!</h1>
+            <p class="lead ">중요한 링크를 저장해두고, 나중에 볼 수 있는 공간입니다</p>
+            <hr class="my-4">
+
+            <p class="lead">
+                <a onclick="openclose()" class=" btn btn-primary btn-lg tolle" href="#" role="button">포스팅박스닫기</a>
+            </p>
         </div>
         <div class="box" id="post_box">
             <div class="form-group">
-              <label for="exampleInputEmail1">아티클URL</label>
-              <input type="email" class="form-control" id="article_url" aria-describedby="emailHelp" placeholder="URL">
-             
+                <label for="exampleInputEmail1">아티클URL</label>
+                <input type="email" class="form-control" id="article_url" aria-describedby="emailHelp"
+                    placeholder="URL">
+
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">간단 코멘트</label>
-              <textarea type="password" class="form-control" id="exampleInputPassword1" placeholder="코멘트"></textarea>
+                <label for="exampleInputPassword1">간단 코멘트</label>
+                <textarea type="password" class="form-control" id="exampleInputPassword1" placeholder="코멘트"></textarea>
             </div>
-           
+
             <button type="submit" class="btn btn-primary click">기사저장</button>
         </div>
         <div class="card-columns">
-        <div class="card">
-            <img class="card-img-top" src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
-                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
+                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                    <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
-                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
+                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                    <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
-                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
+                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                    <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
-                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
+                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                    <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
-                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
+                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                    <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
-                <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
-                <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://a.cdn-hotels.com/gdcs/production40/d811/5e89ad90-8f10-11e8-b6b0-0242ac110007.jpg"
+                    alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">여기 기사 제목이 들어가죠</h5>
+                    <p class="card-text">기사의 요약 내용이 들어갑니다. 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세 무궁화 삼천리 화려강산...</p>
+                    <p class="card-text">여기에 코멘트가 들어갑니다.</p>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 
@@ -123,57 +137,58 @@
 </body>
 <script>
 
-//카운터 증가 홀수 짝수 출력
-//     let count = 1;
-
-//     window.onload = function(){ 
-//         function clic() {
-//     let click = document.querySelectorAll(".click");
-//         for(let i = 0; i < click.length; i++){
-//             click[i].addEventListener("click", () => {
-//                 alert("asdasd");
-//             }
-//             )}
-       
-//     }
-//     clic()
-    
-    
-// };
 
 
-//포스트 박스 숨기고 택스트 바꾸기
+    //카운터 증가 홀수 짝수 출력
+    //     let count = 1;
 
-// function openclose() {
-//     let status = $("#post_box").css('display');
-//     let statu = $("#post_box");
+    //     window.onload = function(){ 
+    //         function clic() {
+    //     let click = document.querySelectorAll(".click");
+    //         for(let i = 0; i < click.length; i++){
+    //             click[i].addEventListener("click", () => {
+    //                 alert("asdasd");
+    //             }
+    //             )}
+
+    //     }
+    //     clic()
 
 
-//     if( status == 'block' ){
-//         statu.hide();
-//         $(".tolle").text("포스트박스열기")
-//     }
-//     else{
-//         statu.show();
-//         $(".tolle").text("포스트박스닫기")
-//     }
-    
-// }
+    // };
 
-//토글버튼 
-// function openclose(){
-//     $("#post_box").toggle();
-// }
 
-function openclose() {
-    const post_box = document.querySelector("#post_box")
-   if(post_box.style.display == 'block'){
-    post_box.style.display = "none";
-   }
-    else{
-        post_box.style.display = "block"
+    //포스트 박스 숨기고 택스트 바꾸기
+
+    // function openclose() {
+    //     let status = $("#post_box").css('display');
+    //     let statu = $("#post_box");
+
+
+    //     if( status == 'block' ){
+    //         statu.hide();
+    //         $(".tolle").text("포스트박스열기")
+    //     }
+    //     else{
+    //         statu.show();
+    //         $(".tolle").text("포스트박스닫기")
+    //     }
+
+    // }
+
+    //토글버튼 
+    // function openclose(){
+    //     $("#post_box").toggle();
+    // }
+
+    function openclose() {
+        const post_box = document.querySelector("#post_box")
+        if (post_box.style.display == 'block') {
+            post_box.style.display = "none";
+        } else {
+            post_box.style.display = "block"
+        }
     }
-}
 
 
 
@@ -181,35 +196,25 @@ function openclose() {
 
 
 
-//택스트 박스 제이쿼리 히든 쇼 함수로 토글
+    //택스트 박스 제이쿼리 히든 쇼 함수로 토글
 
-// function openclose() {
-    
-//     let status = $("#post_box").css('display');
-//     if( status == 'block' ){
-//         $("#post_box").hide();
-//     }
-//     else{
-//         $("#post_box").show();
-//     }
-//     }
+    // function openclose() {
 
-    
+    //     let status = $("#post_box").css('display');
+    //     if( status == 'block' ){
+    //         $("#post_box").hide();
+    //     }
+    //     else{
+    //         $("#post_box").show();
+    //     }
+    //     }
 
-//버튼에 이벤트리스너로 제이쿼리 함수 실행
-    
+
+
+    //버튼에 이벤트리스너로 제이쿼리 함수 실행
+
     // let tolle = document.querySelector(".tolle");
     // tolle.addEventListener("click",openclose)
-
-    
-
-
-
-
-
-
-         
-        </script>
+</script>
 
 </html>
-

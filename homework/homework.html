@@ -23,7 +23,7 @@
    
         <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
    <style>
-      main{display: flex; align-items: center;}
+      main{display: flex; flex-direction: column; align-items: center;}
       .item_img{
          width: 500px;
          height: 400px;
@@ -47,6 +47,7 @@
    <div class="item_desc">
       <h2>양초를 팝니다 <span class="price">가격:3,00원/개</span></h2>
       <p>이 양초는 사실 특별한 힘을 지니고 있어요</p>
+      <p class="meney"></p>
    </div>
    <div class="item_order">
       <div class="input-group mb-3">
@@ -80,13 +81,33 @@
 </div>
    </div>
 
-    
+
+   </main>
+       
    <script>
       function order(){
          alert("주문이 완료 되었습니다.");
       }
+
+ 
+      
+         $.ajax({
+            type: "GET",
+            url: "http://spartacodingclub.shop/sparta_api/rate",
+            data: {},
+            success: function (response) {
+               let rows = response['rate']
+               
+               let add_html = `환율 : ${rows}`;
+
+               $(".meney").append(add_html);
+                  
+               }
+            }
+         )
+         
+      
    </script>
-   </main>
 </body>
 
 </html>
